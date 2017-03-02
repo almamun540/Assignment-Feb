@@ -1,0 +1,19 @@
+form{
+    width: 40%;
+    margin: 0 auto;
+}
+form input{
+    width: 100%;
+    background-color: #006699;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+}
+form button{
+    background-color: #006699;
+    width: 25%;
+    float: left;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: #fff;
+}

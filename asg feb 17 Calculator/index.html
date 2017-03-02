@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form name="CalCulat">
+            <input type="text" name="DisplayCal" readonly>
+            <button type="button" onclick="ClckOne()">1</button>
+            <button type="button" onclick="ClckTwo()">2</button>
+            <button type="button" onclick="ClckThree()">3</button>
+            <button type="button" onclick="ClckFour()">4</button>
+            <button type="button" onclick="ClckFive()">5</button>
+            <button type="button" onclick="ClckSix()">6</button>
+            <button type="button" onclick="ClckSeven()">7</button>
+            <button type="button" onclick="ClckEight()">8</button>
+            <button type="button" onclick="ClckNine()">9</button>
+            <button type="button" onclick="ClckZero()">0</button>
+            
+            <button type="button" onclick="ClckPlus()">+</button>
+            <button type="button" onclick="ClckMinus()">-</button>
+            <button type="button" onclick="ClckMulty()">*</button>
+            <button type="button" onclick="ClckDevid()">/</button>
+            <button type="button" onclick="ClckEqual()">=</button>
+            <button type="button" onclick="ClckClear()">C</button>
+        </form>
+        
+        <script>
+        function ClckOne(){
+            document.CalCulat.DisplayCal.value +=1;
+        }
+        function ClckTwo(){
+            document.CalCulat.DisplayCal.value +=2;
+        }
+        function ClckThree(){
+            document.CalCulat.DisplayCal.value +=3;
+        }
+        function ClckFour(){
+            document.CalCulat.DisplayCal.value +=4;
+        }
+        function ClckFive(){
+            document.CalCulat.DisplayCal.value +=5;
+        }
+        function ClckSix(){
+            document.CalCulat.DisplayCal.value +=6;
+        }
+        function ClckSeven(){
+            document.CalCulat.DisplayCal.value +=7;
+        }
+        function ClckEight(){
+            document.CalCulat.DisplayCal.value +=8;
+        }
+        function ClckNine(){
+            document.CalCulat.DisplayCal.value +=9;
+        }
+        function ClckZero(){
+            document.CalCulat.DisplayCal.value +=0;
+        }
+        function ClckPlus(){
+            document.CalCulat.DisplayCal.value +="+";
+        }
+        function ClckMinus(){
+            document.CalCulat.DisplayCal.value +="-";
+        }
+        function ClckMulty(){
+            document.CalCulat.DisplayCal.value +="*";
+        }
+        function ClckDevid(){
+            document.CalCulat.DisplayCal.value +="/";
+        }
+        function ClckClear(){
+            document.CalCulat.DisplayCal.value =" ";
+        }
+            
+        function ClckEqual(){
+        var result= eval(document.CalCulat.DisplayCal.value);
+        document.CalCulat.DisplayCal.value=result;
+        }
+    
+        </script>
+    </body>
+</html>

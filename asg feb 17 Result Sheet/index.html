@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result Sheet</title>
+    <link rel="stylesheet" type="tex/css" href="style.css">
+    </head>
+    <body>
+    
+    <!--
+    91 to 100 =A+
+    81 to 90=A
+    71 to 80=A-
+    61 to 70=B+
+    51 to 60=B
+    41 to 50=D
+    31 to 40 = C
+    0 to 30 = F
+    -->
+    <input type="text" name="" id="InputNmbr">
+        <br>
+        <button type="button" onclick="ShowForClck()">Click to show result</button>
+        <br>
+        <h1 id="ShowReslt"></h1>
+<script>
+    
+    function ShowForClck(){
+        var a=document.getElementById("InputNmbr").value;
+        var Show=document.getElementById("ShowReslt");
+        
+        if(a <=100){
+            Show.innerHTML="A+";
+             
+            if(a <=90){
+                Show.innerHTML="A";
+                if(a <=80){
+                    Show.innerHTML="A-";
+                        if(a <=70){
+                            Show.innerHTML="B+";
+                            if(a <=60){
+                                Show.innerHTML="B";
+                                if(a <=50){
+                                    Show.innerHTML="C";
+                                    if(a <=40){
+                                        Show.innerHTML="D";
+                                        if(a <=30){
+                                            Show.innerHTML="F";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+         } 
+    }
+        </script>
+    </body>
+    
+</html>
